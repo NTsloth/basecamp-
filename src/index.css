@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+  background-color: #f0f4f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.containerWrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 40px 300px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+@media (max-width: 1800px) {
+  .containerWrapper {
+    padding: 40px 150px;
+  }
+}
+@media (max-width: 1700px) {
+  .containerWrapper {
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 1400px) {
+  .containerWrapper {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerWrapper {
+    padding: 40px 48px;
+  }
+}
+@media (max-width: 767px) {
+  .containerWrapper {
+    padding: 28px 16px;
+  }
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

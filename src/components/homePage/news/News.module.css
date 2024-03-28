@@ -1,0 +1,30 @@
+.scrollContainer {
+  overflow-y: auto;
+  max-height: 800px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.news {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.news h1 {
+  font-size: 20px;
+  padding: 24px 12px;
+}
+
+.article {
+  margin-top: 48px;
+}
+
+@media (max-width: 1400px) {
+  .scrollContainer {
+    max-height: 600px;
+  }
+}
+@media (max-width: 1023px) {
+  .scrollContainer {
+    max-height: 180px;
+  }
+}

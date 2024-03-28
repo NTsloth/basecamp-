@@ -1,0 +1,123 @@
+.mySwiper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 12px 24px 12px;
+  border-radius: 20px;
+}
+
+.mySwiper > .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper > div > div:first-child {
+  transform: unset;
+}
+
+.mySwiper > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 406px;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 20px;
+}
+
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sliderContent > div > p {
+  background-color: #f5f8ff;
+}
+.sliderContent > div:first-child {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  gap: 4px;
+}
+
+.sliderContent > div:first-child > p {
+  background: #f5f8ff;
+  padding: 6px 8px;
+  border-radius: 16px;
+}
+
+.mySwiper > div:nth-child(2) {
+  bottom: 27%;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  padding: 0 24px;
+  top: 39%;
+}
+
+.prev,
+.next {
+  padding: 7.5px 8px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+}
+
+.buttonSwiper {
+  background: #fff;
+  padding: 21px 0px 35px 24px;
+  margin-top: 48px;
+  border-radius: 16px;
+  position: relative;
+  max-width: 100%;
+}
+.swiperButtons {
+  display: flex;
+  gap: 25px;
+  margin-right: 20px;
+}
+.swiperContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.swiperContent > p {
+  font-size: 16px;
+}
+@media (max-width: 1400px) {
+  .buttons {
+    top: 35%;
+  }
+  .mySwiper > div:nth-child(2) {
+    bottom: 35%;
+  }
+}
+@media (max-width: 1023px) {
+  .buttons {
+    top: 30%;
+  }
+  .mySwiper > div:nth-child(2) {
+    bottom: 41%;
+  }
+}
+@media (max-width: 767px) {
+  .mySwiper > div > div:first-child {
+    width: 100%;
+  }
+  .buttons {
+    display: none;
+  }
+}

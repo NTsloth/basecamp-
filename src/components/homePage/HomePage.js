@@ -24,7 +24,7 @@ const HomePage = () => {
         >
           <div className="md:col-span-3 sm:col-span-full">
             <Slider className={styles.slider} />
-            <div>heyyyy</div>
+            <div>Table </div>
           </div>
           <div className="md:col-span-1 sm:col-span-full">
             <Article />

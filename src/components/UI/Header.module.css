@@ -7,11 +7,16 @@
 
 .burgermenu {
   display: none;
+  cursor: pointer;
 }
 
 .searchcontent {
   margin-left: auto;
   margin-right: 0;
+}
+
+.searchcontent svg {
+  cursor: pointer;
 }
 
 .header {

@@ -51,7 +51,7 @@ const Header = ({ categories }) => {
     >
       <div className="flex items-center space-x-4">
         <svg
-          style={{ marginRight: "32px", zIndex: "99" }}
+          style={{ marginRight: "32px", zIndex: "99", cursor: "pointer" }}
           width="165"
           height="40"
           viewBox="0 0 165 40"
